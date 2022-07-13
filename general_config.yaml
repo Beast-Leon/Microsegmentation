@@ -1,0 +1,28 @@
+dataset:
+    data_path: sample_data.csv
+
+model:
+    decision_tree:
+        random_state: 0
+        max_leaf_nodes: 10
+    random_forest:
+        random_state: 0
+        n_estimators: 100
+        max_leaf_nodes: 10
+criteria:
+    criteria_1:
+        interested_class: 1
+        min_samples: 10
+        lift: 2
+        base_rate: 10
+    criteria_2:
+        interested_class: 2
+        min_samples: 50
+        lift: 3
+        base_rate: 10
+    criteria_3:
+        interested_class: 3
+        min_samples: 30
+        lift: 2
+        base_rate: 10
+        
